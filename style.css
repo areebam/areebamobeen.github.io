@@ -1,28 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
+
+a:visited { 
+    text-decoration: none; 
+}
+
+.nav a:hover, .active {text-decoration: none; color:purple; }
+/* Hover animations for navBar */
+
+a{
+    text-decoration: none; color:black;}
+.nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FFFFFF;
+    transform: scale3d(0, 1, 1);
+    transition: transform ease 200ms;
+}
+    
+.nav a:hover:before {
+transform: scale3d(1, 1, 1);
+}
+.active-page{
+    color: #800080;
+}
 body{
+    max-height: 1000px;
+    max-width: 50px;
     font-family: Raleway;
     background: linear-gradient(
     to bottom,
-    #D1E8F0 25%,
-    #D1E8F0 10%,
-    white 50%    );
-    padding: 55px;
+    #B7B8F6 20%,
+    #B7B8F6 10%,
+    #FDFEEC 40%);
+    padding: 50px;
     font-weight:700;
 }
-.container{ display: inline-block; 
-} 
+.name{ display: inline-block;} 
 .text{
     color: purple;
     font-size: 4em;
-    letter-spacing: 12px;
-    border-right: 2px solid;
+    font-weight: bold;
+    letter-spacing: 10px;
     width: 100%;
+    border-right: 2px solid transparent; 
     white-space: nowrap;
     overflow: hidden;
     animation:
-        typing 3s steps(15),
-        cursor .4s step-end infinite alternate;
+        typing 2s steps(18), blink-caret 5.5s,
+        cursor .4s step-end 8 alternate;
 }
 /* Typing Animation */
 @keyframes cursor{
@@ -31,22 +62,58 @@ body{
 @keyframes typing{
   from{width: 0 }
 }
-
-p {
-    font-size: 1.5em;
-    font-weight: 700;
+@keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    2%{
+      border-color: black;
+    }
+}
+.nav{
+    font-family: Raleway;
+    font-size: x-large;
+    font-style: bold;
+    text-decoration:none;
 }
 
+.footer{
+    font-size: x-large;
+}
+.extra-info{
+    font-size: medium;
+
+}
+h1{font-style: bold;}
+
+h2{font-size: 2em; font-weight: 550px;}
+
+p{font-size: 1.5em; font-style: bold; white-space: nowrap;}
+
+.circuit-caption{
+    position: relative; left: 120px; bottom: 5px;
+}
+.programming-caption{
+    position: relative; left: 50px; bottom: 17px;
+}
+.gallery-caption{
+    position: absolute; left: 100px; top: 240px;
+}
+.circuit-icon{
+    position:absolute; left: 70px;bottom: 80px;}
+.programming-icon{
+    position: relative; left: 500px; bottom:170px;}
+
+.gallery-icon{
+    position:absolute; left:1015px; bottom: 150px;}
+
+.mapper{
+    position: relative; top: 210px;
+}
 .buzzwire{
     font-size: 1em;
 }
 .ghub-logo{
     margin-left: 200px;
-}
-.icons{
-    position: relative; left: 220px; top:50px;
-
-}
-.projects{
-    position: relative; top:200px;
 }
