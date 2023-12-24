@@ -8,38 +8,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div section class ="container">
-        <h1 class="text">Areeba  Mobeen</h1>
-        <p>Computer Engineering Student at the University of Toronto</p>
+    <!-- Nav Bar -->
+    <div class = "nav">
+        <a style= "position:absolute; left: 960px", href="./index.html"class='active-page'> Home</a>
+        <a style= "position:absolute; left: 1060px", href="./projects.html">Projects</a>
+        <a style= "position:absolute; left: 1170px", href="./about.html">About</a>
+        <a style= "position:absolute; left: 1260px", href="./contact.html">Contact</a>
     </div>
 
-    <div style = "position:fixed; left:1000px; top:40px;">
+    <div section class = "name">
+        <h1 class="text">Areeba  Mobeen</h1>
+        
+        <div style = "position:relative;">
+            <p>Electrical & Computer Engineering | University of Toronto </p>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div style= "position:relative; left:10px; top:750px;">
+        <p class = "footer"> Contact</p>
+        <p class = "extra-info"> areeba.mobeen@mail.utoronto.ca</p>
+        <p class = "extra-info"> 647-522-5350</p>
+
+    </div>
+    <!-- Contact Icons (Github, Linkedin...) -->
+
+    <div style = "position:relative; left:1000px; top:700px;">
         <a href="https://github.com/areebam">
             <img class="ghub-logo" src="Files/github-logo.png" alt="Github Logo" width="40", height="40">
         </a>
     </div>
 
-    <div style = "position:fixed; left:1250px; top:25px;">
+    <div style = "position:relative; left:1250px; top:642px;">
         <a href="https://www.linkedin.com/in/areebamobeen/">
             <img class ="linkedin-logo" src="Files/linkedin-logo.png" alt="Linkedin logo" width = "70", height="70">
         </a>
     </div>
 
-    <div class="icons">
-        <div class="circuit-icon">
-            <img class ="circuit-icon" src="Files/circuit-icon.png" alt="Circuit Icon" width = "200", height="200">
-        </div>
-        
+    <!-- Main Icons: hardware projects, software projects, about info, gallery OR projects, about info, gallery -->
+    <div class="circuit-icon">
+        <img class ="circuit-icon" src="Files/circuit-icon.png" alt="Circuit Icon" width = "245", height="245">
+       <div class ="circuit-caption">
+            <h2>Hardware</h2>
+       </div>
     </div>
 
-
-    <div class="projects">
-        <h2>Projects </h2>
-        <a class="buzzwire" href="https://github.com/ambroseling/BuzzWire/tree/main">Github Repository</a>
+    <div class="programming-icon">
+        <img class ="Images/programming-icon" src="Files/programming.png" alt="Programming Icon" width = "290", height="290">
+        <div class ="programming-caption">
+            <h2>Programming</h2>
+       </div>
     </div>
+
+    <div class="gallery-icon">
+        <img class ="Images/gallery-icon" src="Files/gallery.png" alt="gallery icon" width = "260", height="260">
+        <div class ="gallery-caption">
+            <h2>Gallery</h2>
+       </div>
+    </div>
+
 
 </body>
 </html>
-   
 
+
+
+
+ 
