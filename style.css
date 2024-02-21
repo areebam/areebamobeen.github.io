@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
-
 a:visited { 
     text-decoration: none; 
 }
@@ -29,9 +28,34 @@ transform: scale3d(1, 1, 1);
 .active-page{
     color: #800080;
 }
-body{
+#secondpage{
     max-height: 1000px;
     max-width: 50px;
+    font-family: Raleway;
+    background: #FFCC85;
+    padding: 50px;
+    font-weight:700;
+}
+#thirdpage{
+    max-height: 1000px;
+    max-width: 50px;
+    font-family: Raleway;
+    background: #FFCC85;
+    padding: 50px;
+    font-weight:700;
+}
+#fourthpage{
+    max-height: 1000px;
+    max-width: 100%;
+    font-family: Raleway;
+    background: #FFCC85;
+    padding: 50px;
+    font-weight:700;
+}
+
+body{
+    max-height: 1000px;
+    max-width: 10px;
     font-family: Raleway;
     background: linear-gradient(
     to bottom,
@@ -41,11 +65,29 @@ body{
     padding: 50px;
     font-weight:700;
 }
+
+.about{
+    color: darkslateblue;
+    font-size: 4.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 2px solid transparent; 
+    margin-top: 100px;
+    white-space: nowrap;
+}
+.contact{
+    color: darkslateblue;
+    font-size: 2.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 2px solid transparent; 
+    margin-top: 100px;
+    white-space: nowrap;
+}
+
 .name{ display: inline-block;} 
 .text{
     color: purple;
     font-size: 4em;
-    font-weight: bold;
+    font-weight: 1000px;
     letter-spacing: 10px;
     width: 100%;
     border-right: 2px solid transparent; 
@@ -87,26 +129,32 @@ body{
 }
 h1{font-style: bold;}
 
-h2{font-size: 2em; font-weight: 550px;}
+h2{font-size: 1.7em; font-weight: 550px;}
+
+h3{font-size: 1.5em; font-weight: 500px;}
+
+h4{inline-size: 600px; font-size: 1.5em; font-style: bold; max-width:600px; word-wrap:break-word; letter-spacing: 2px;}
+h5{font-size: x-large; font-weight: 900px;}
+
 
 p{font-size: 1.5em; font-style: bold; white-space: nowrap;}
 
 .circuit-caption{
-    position: relative; left: 120px; bottom: 5px;
+    position: relative; left: 130px; bottom: -2px;
 }
 .programming-caption{
-    position: relative; left: 50px; bottom: 17px;
+    position: relative; left: 50px; bottom: 25px;
 }
 .gallery-caption{
-    position: absolute; left: 100px; top: 240px;
+    position: absolute; left: 100px; top: 230px;
 }
 .circuit-icon{
-    position:absolute; left: 70px;bottom: 80px;}
+    position:absolute; left: 70px;bottom: 65px;}
 .programming-icon{
     position: relative; left: 500px; bottom:170px;}
 
 .gallery-icon{
-    position:absolute; left:1015px; bottom: 150px;}
+    position:absolute; left:1015px; bottom: 120px;}
 
 .mapper{
     position: relative; top: 210px;
@@ -117,3 +165,223 @@ p{font-size: 1.5em; font-style: bold; white-space: nowrap;}
 .ghub-logo{
     margin-left: 200px;
 }
+
+
+
+:root {
+  --color-primary: darkslateblue;
+  --color-secondary: darkslateblue;
+  --color-tertiary: #ee6352;
+  --color-quaternary: #ee6352;
+  --color-quinary: grey;
+
+}
+
+.content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 300;
+    font-size: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  color: var(--color-primary);
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-12px, -12px);
+    }
+    50% {
+      transform: translate(-12px, -12px);
+    }
+    60% {
+      transform: translate(-12px, -12px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display:none;
+  }
+  
+  /* Next & previous buttons */
+  .next {
+    cursor: pointer;
+    position: relative; right: -260px; top: -250px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #717171;
+
+  }
+  
+  /* Position the "next button" to the right */
+  .prev {
+    cursor: pointer;
+    position: relative; left: -47px; top: -250px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 3px 0 0 3px;
+    background-color: #717171;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Down arrow */
+.arrow {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+        
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll1 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+@keyframes scroll1 {
+    0% {
+        opacity: 1;
+        transform: rotate(45deg) translate(-20px, -20px);
+        border-bottom: 5px solid #ff6a06;
+        border-right: 5px solid #ff9b06;
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+
+.rounded-rectangle-one {
+    position: 50%;
+    width: 1300px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    background-color: #3498db; /* Set the background color */
+    border-radius: 15px; /* Adjust the border-radius to control the rounding */
+}
+.rounded-rectangle-two {
+    width: 600px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    background-color: #3498db; /* Set the background color */
+    border-radius: 15px; /* Adjust the border-radius to control the rounding */
+}
+.rounded-rectangle-three {
+  position: 50%;
+  width: 1300px; /* Adjust the width as needed */
+  height: 450px; /* Adjust the height as needed */
+  background-color: darkslateblue; /* Set the background color */
+  border-radius: 15px; /* Adjust the border-radius to control the rounding */
+}
+
+.rectangle-text {
+    position: absolute; 
+    top: 5%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff; /* Set the text color */
+    font-weight: bolder; /* Adjust the font weight if needed */
+    font-size: 4em;
+}
+.rectangle-texttwo {
+    position: absolute; 
+    top: 5%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff; /* Set the text color */
+    font-weight: bolder; /* Adjust the font weight if needed */
+    font-size: 2em;
+}
+.rectangle-subtitle{
+    color: black; /* Set the text color */
+    font-weight: bolder; /* Adjust the font weight if needed */
+}
+
